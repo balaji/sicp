@@ -11,3 +11,4 @@
 - 1.9 to 1.10 [Linear Recursion and Iteration](./1.%20Building%20Abstractions%20with%20Procedures/1.2%20Procedures%20and%20the%20Processes%20They%20Generate/1.2.1%20-%20Linear%20Recursion%20and%20Iteration.ipynb)
 - 1.11 to 1.13 [Tree Recursion](./1.%20Building%20Abstractions%20with%20Procedures/1.2%20Procedures%20and%20the%20Processes%20They%20Generate/1.2.2%20-%20Tree%20Recursion.ipynb)
 - 1.14 to 1.15 [Orders of Growth](./1.%20Building%20Abstractions%20with%20Procedures/1.2%20Procedures%20and%20the%20Processes%20They%20Generate/1.2.3%20-%20Orders%20of%20Growth.ipynb)
+- 1.16 to 1.19 [Exponentiation](./1.%20Building%20Abstractions%20with%20Procedures/1.2%20Procedures%20and%20the%20Processes%20They%20Generate/1.2.4%20-%20Exponentiation.ipynb)
