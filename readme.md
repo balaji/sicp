@@ -7,7 +7,7 @@
 - [Notes and Lectures](https://web.mit.edu/6.001/6.037/)
 
 # Solutions for Exercises
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/balaji/sicp/HEAD)
 ## Chapter 1: Building Abstractions with Procedures
 | Excercises | Page |
 |---|---|
