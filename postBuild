@@ -1,2 +1,2 @@
 #!/bin/bash
-raco pkg install iracket --auto && raco iracket install
+raco pkg install --auto iracket && raco iracket install
