@@ -21,9 +21,9 @@ COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
-
+ENV PATH="${PATH}:${HOME}/.local/bin"
 RUN python3 -m pip install --no-cache-dir notebook jupyterlab
-RUN raco pkg install --auto -D iracket
+RUN raco pkg install --auto --no-docs iracket
 RUN raco iracket install
 
 ENTRYPOINT ["/home/jovyan/entrypoint.sh"]
