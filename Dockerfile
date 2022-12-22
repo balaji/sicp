@@ -1,7 +1,8 @@
-FROM ubuntu:jammy-20221130
+FROM racket/racket:8.7
 
 RUN apt-get update
-RUN apt-get install -y python3 racket pip apt-utils libssl-dev libzmq5
+RUN apt-get install apt-utils
+RUN apt-get install -y python3 pip libssl-dev libzmq5
 COPY ./entrypoint.sh /
 
 ARG NB_USER=jovyan
