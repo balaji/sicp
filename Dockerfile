@@ -1,7 +1,7 @@
 FROM ubuntu:jammy-20221130
 
 RUN apt-get update
-RUN apt-get install -y python3 racket pip apt-utils libressl-devel
+RUN apt-get install -y python3 racket pip apt-utils libssl-dev
 RUN python3 -m pip install --no-cache-dir notebook jupyterlab
 RUN raco pkg install --auto iracket
 RUN raco iracket install
