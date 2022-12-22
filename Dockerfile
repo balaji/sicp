@@ -2,6 +2,7 @@ FROM ubuntu:jammy-20221130
 
 RUN apt-get update
 RUN apt-get install -y python3 racket pip apt-utils libssl-dev libzmq5
+COPY ./entrypoint.sh /
 
 ARG NB_USER=balaji
 ARG NB_UID=1000
@@ -14,7 +15,6 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 
-COPY ./entrypoint.sh /
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
 USER root
