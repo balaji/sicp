@@ -2,9 +2,6 @@ FROM ubuntu:jammy-20221130
 
 RUN apt-get update
 RUN apt-get install -y python3 racket pip apt-utils libssl-dev libzmq5
-RUN python3 -m pip install --no-cache-dir notebook jupyterlab
-RUN raco pkg install --auto iracket
-RUN raco iracket install
 
 ARG NB_USER=balaji
 ARG NB_UID=1000
@@ -23,5 +20,9 @@ COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
+
+RUN python3 -m pip install --no-cache-dir notebook jupyterlab
+RUN raco pkg install --auto iracket
+RUN raco iracket install
 
 ENTRYPOINT ["/home/balaji/entrypoint.sh"]
