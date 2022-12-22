@@ -1,0 +1,5 @@
+name: balaji-sicp
+channels:
+  - conda-forge
+dependencies:
+  - python
